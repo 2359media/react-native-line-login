@@ -35,6 +35,12 @@ See [android-guide.md](https://github.com/2359media/react-native-line-login/blob
 ## Additional scopes
 
 
+## Contribution
+This package cannot be done without awesome help from [@vinhnx](https://github.com/vinhnx) and [@nguyendong2359](https://github.com/nguyendong2359)
+
+- [@vunguyentuan](mailto:tuanvu.vn007@gmail.com) The main author.
+- [@vinhnx](mailto:vinhnguyen2308@gmail.com) iOS supporter.
+- [@nguyendong2359](https://github.com/nguyendong2359) Android supporter.
 
 ## Licence
 (MIT)
