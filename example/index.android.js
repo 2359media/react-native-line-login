@@ -13,7 +13,7 @@ import {
   TouchableNativeFeedback 
 } from 'react-native';
 
-import { LoginButton, LoginManager } from './src'
+import { LoginManager } from 'react-native-line-login'
 
 class example extends Component {
   _handleClickLogin () {
@@ -24,6 +24,10 @@ class example extends Component {
     .catch((err) => {
       console.log(err)
     })
+  }
+
+  _handleClickLogout () {
+    LoginManager.logout()
   }
 
   render() {
@@ -47,6 +51,14 @@ class example extends Component {
             <Text>Login</Text>
           </View>
         </TouchableNativeFeedback> 
+
+        <TouchableHighlight
+          style={styles.button}
+          onPress={this._handleClickLogout}>
+          <View>
+            <Text>Logout</Text>
+          </View>
+        </TouchableHighlight> 
       </View>
     );
   }

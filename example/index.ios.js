@@ -13,7 +13,7 @@ import {
   TouchableHighlight 
 } from 'react-native';
 
-import { LoginButton, LoginManager } from './src'
+import { LoginManager } from 'react-native-line-login'
 
 class example extends Component {
   _handleClickLogin () {
