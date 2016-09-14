@@ -3,100 +3,46 @@
  */
 'use strict';
 
-const LoginManager = require('react-native').NativeModules.LineLoginManager;
-
-/**
- * Indicate how Facebook Login should be attempted.
- */
-export type LoginBehaviorAndroid =
-  // Attempt login in using the Facebook App, and if that does not work fall back to web dialog auth.
-  'native_with_fallback'|
-  // Only attempt to login using the Facebook App.
-  'native_only'|
-  // Only the web dialog auth should be used.
-  'web_only';
-
-export type LoginBehaviorIOS =
-  // Attempts log in through the native Facebook app.
-  // The SDK may still use Safari instead.
-  // See details in https://developers.facebook.com/blog/post/2015/10/29/Facebook-Login-iOS9/
-  'native' |
-  // Attempts log in through the Safari browser.
-  'browser' |
-  // Attempts log in through the Facebook account currently signed in through Settings.
-  'system_account' |
-  // Attempts log in through a modal UIWebView pop-up.
-  'web';
-
-export type LoginBehavior = LoginBehaviorIOS | LoginBehaviorAndroid;
-
-/**
- * Indicates which default audience to use for sessions that post data to Facebook.
- */
-export type DefaultAudience =
-  // Indicates that the user's friends are able to see posts made by the application.
-  'friends' |
-  // Indicates that all Facebook users are able to see posts made by the application.
-  'everyone' |
-  // Indicates that only the user is able to see posts made by the application.
-  'only_me';
+const LoginManager = require('react-native').NativeModules.RNLineLoginManager;
 
 /**
  * Shows the results of a login operation.
  */
 export type LoginResult = {
-  isCancelled: boolean,
-  grantedPermissions?: Array<string>,
-  declinedPermissions?: Array<string>,
+  accessToken: string,
+  refreshToken: string,
+  expire: string,
+  mid: string
 };
+
+/**
+ * UserProfile
+ */
+export type Profile = {
+  displayName: string,
+  mid: string,
+  pictureUrl: string
+}
 
 module.exports = {
   /**
    * Logs the user in with the requested read permissions.
    */
-  logInWithReadPermissions(permissions: Array<string>): Promise<LoginResult> {
-    return LoginManager.logInWithReadPermissions(permissions);
+  login(): Promise<LoginResult> {
+    return LoginManager.login();
   },
 
   /**
-   * Logs the user in with the requested publish permissions.
+   * Get user profile
    */
-  logInWithPublishPermissions(permissions: Array<string>): Promise<LoginResult> {
-    return LoginManager.logInWithPublishPermissions(permissions);
-  },
-
-  /**
-   * Getter for the login behavior.
-   */
-  getLoginBehavior(): Promise<LoginBehavior> {
-    return LoginManager.getLoginBehavior();
-  },
-
-  /**
-   * Setter for the login behavior.
-   */
-  setLoginBehavior(loginBehavior: LoginBehavior) {
-    LoginManager.setLoginBehavior(loginBehavior);
-  },
-
-  /**
-   * Getter for the default audience.
-   */
-  getDefaultAudience(): Promise<DefaultAudience> {
-    return LoginManager.getDefaultAudience();
-  },
-
-  /**
-   * Setter for the default audience.
-   */
-  setDefaultAudience(defaultAudience: DefaultAudience) {
-    LoginManager.setDefaultAudience(defaultAudience);
-  },
+  getUserProfile(): Promise<Profile> {
+    return LoginManager.getUserProfile();
+  },  
 
   /**
    * Logs out the user.
    */
-  logOut() {
-    LoginManager.logOut();
+  logout() {
+    LoginManager.logout();
   },
 };
