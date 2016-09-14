@@ -23,7 +23,6 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		B83387981D886DA60016607D /* libRNLineLoginManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83387971D886D960016607D /* libRNLineLoginManager.a */; };
 		B833879D1D886EF10016607D /* LineAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83387991D886EF10016607D /* LineAdapter.framework */; };
 		B833879E1D886EF10016607D /* LineAdapterLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B833879A1D886EF10016607D /* LineAdapterLogin.framework */; };
 		B833879F1D886EF10016607D /* LineAdapterUI.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = B833879B1D886EF10016607D /* LineAdapterUI.bundle */; };
@@ -34,6 +33,7 @@
 		B83387A81D886F550016607D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83387A71D886F550016607D /* CoreTelephony.framework */; };
 		B83387AA1D886F600016607D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83387A91D886F600016607D /* CoreText.framework */; };
 		B83387B71D887CA50016607D /* LineAdapter.plist in Resources */ = {isa = PBXBuildFile; fileRef = B83387B61D887CA50016607D /* LineAdapter.plist */; };
+		D3400256219B40B3A3A890F6 /* libRNLineLoginManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1ABB9507EAD452590468DD8 /* libRNLineLoginManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,9 +114,9 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		B83387961D886D960016607D /* PBXContainerItemProxy */ = {
+		B83387CF1D8945D60016607D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B83387881D886D950016607D /* RNLineLoginManager.xcodeproj */;
+			containerPortal = 8F028ACA727345538BEE58D9 /* RNLineLoginManager.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNLineLoginManager;
@@ -145,7 +145,8 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		B83387881D886D950016607D /* RNLineLoginManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNLineLoginManager.xcodeproj; path = ../../ios/RNLineLoginManager.xcodeproj; sourceTree = "<group>"; };
+		8F028ACA727345538BEE58D9 /* RNLineLoginManager.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNLineLoginManager.xcodeproj; path = "../node_modules/react-native-line-login/ios/RNLineLoginManager.xcodeproj"; sourceTree = "<group>"; };
+		B1ABB9507EAD452590468DD8 /* libRNLineLoginManager.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNLineLoginManager.a; sourceTree = "<group>"; };
 		B83387991D886EF10016607D /* LineAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LineAdapter.framework; path = Frameworks/LineAdapter.framework; sourceTree = "<group>"; };
 		B833879A1D886EF10016607D /* LineAdapterLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LineAdapterLogin.framework; path = Frameworks/LineAdapterLogin.framework; sourceTree = "<group>"; };
 		B833879B1D886EF10016607D /* LineAdapterUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = LineAdapterUI.bundle; path = Frameworks/LineAdapterUI.bundle; sourceTree = "<group>"; };
@@ -190,7 +191,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				B83387981D886DA60016607D /* libRNLineLoginManager.a in Frameworks */,
+				D3400256219B40B3A3A890F6 /* libRNLineLoginManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +305,6 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				B83387881D886D950016607D /* RNLineLoginManager.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -315,6 +315,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				8F028ACA727345538BEE58D9 /* RNLineLoginManager.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -357,10 +358,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B83387891D886D950016607D /* Products */ = {
+		B83387C21D8945D60016607D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B83387971D886D960016607D /* libRNLineLoginManager.a */,
+				B83387D01D8945D60016607D /* libRNLineLoginManager.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -410,7 +411,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -472,8 +473,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = B83387891D886D950016607D /* Products */;
-					ProjectRef = B83387881D886D950016607D /* RNLineLoginManager.xcodeproj */;
+					ProductGroup = B83387C21D8945D60016607D /* Products */;
+					ProjectRef = 8F028ACA727345538BEE58D9 /* RNLineLoginManager.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -555,11 +556,11 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B83387971D886D960016607D /* libRNLineLoginManager.a */ = {
+		B83387D01D8945D60016607D /* libRNLineLoginManager.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNLineLoginManager.a;
-			remoteRef = B83387961D886D960016607D /* PBXContainerItemProxy */;
+			remoteRef = B83387CF1D8945D60016607D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -653,6 +654,10 @@
 				INFOPLIST_FILE = exampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
 			};
@@ -666,6 +671,10 @@
 				INFOPLIST_FILE = exampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/example.app/example";
 			};
@@ -684,6 +693,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-line-login/ios",
 				);
 				INFOPLIST_FILE = example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -708,6 +718,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-line-login/ios",
 				);
 				INFOPLIST_FILE = example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -758,6 +769,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-line-login/ios",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -798,6 +810,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native-line-login/ios",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;

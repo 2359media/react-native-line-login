@@ -1,9 +1,7 @@
 
 #import "RNLineLoginManager.h"
-#import "RCTLog.h"
 #import <LineAdapter/LineAdapter.h>
 #import <LineAdapterUI/LineAdapterUI.h>
-#import "RCTConvert.h"
 
 @interface RNLineLoginManager ()
 @property (strong, nonatomic) RCTPromiseResolveBlock loginResolver;
