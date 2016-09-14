@@ -11,7 +11,7 @@ Includes LINE Android SDK v3.1.19
 ```gradle
 ...
 include ':react-native-line-login', ':app'
-project(':react-native-line-login').projectDir = new File(rootProject.projectDir, '../../android')
+project(':react-native-line-login').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-line-login/android')
 
 ```
 
