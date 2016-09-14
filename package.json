@@ -1,0 +1,24 @@
+{
+  "name": "react-native-line-login",
+  "version": "0.0.1",
+  "description": "react native line login",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2359media/react-native-line-login.git"
+  },
+  "keywords": [
+    "LINE",
+    "login",
+    "react-native"
+  ],
+  "author": "vunguyentuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2359media/react-native-line-login/issues"
+  },
+  "homepage": "https://github.com/2359media/react-native-line-login#readme"
+}

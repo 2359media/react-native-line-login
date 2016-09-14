@@ -1,0 +1,6 @@
+rootProject.name = 'example'
+
+include ':app'
+
+include ':react-native-line-login'
+project(':react-native-line-login').projectDir = new File(rootProject.projectDir, '../../android')
