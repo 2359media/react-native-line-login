@@ -52,13 +52,13 @@ class example extends Component {
           </View>
         </TouchableNativeFeedback> 
 
-        <TouchableHighlight
+        <TouchableNativeFeedback
           style={styles.button}
           onPress={this._handleClickLogout}>
           <View>
             <Text>Logout</Text>
           </View>
-        </TouchableHighlight> 
+        </TouchableNativeFeedback> 
       </View>
     );
   }

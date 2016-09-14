@@ -1,14 +1,12 @@
 package com.example;
 
 import android.app.Application;
-import android.util.Log;
 
 import com.facebook.react.ReactApplication;
-import com.facebook.react.ReactInstanceManager;
+import com.vunguyen.reactnative.androidsdk.LineReactPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
-import com.vunguyen.reactnative.androidsdk.LineReactPackage;
 
 import java.util.Arrays;
 import java.util.List;

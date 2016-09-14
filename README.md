@@ -14,8 +14,18 @@ Let your users sigin with their LINE account.
 - LINE SDK iOS v3.1.17 and Android v3.1.19
 
 ## Installation
+### - With RNPM
+```bash
+react-native install react-native-line-login
+```
+
+### - Manual
 ```bash
 npm install react-native-line-login --save
+```
+
+```bash
+react-native link
 ```
 
 ## Configuration and usage
