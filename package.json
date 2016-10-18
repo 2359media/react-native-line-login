@@ -1,6 +1,6 @@
 {
   "name": "react-native-line-login",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react native line login",
   "main": "index.js",
   "scripts": {
